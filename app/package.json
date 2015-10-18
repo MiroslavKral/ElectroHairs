@@ -1,0 +1,24 @@
+{
+  "name": "hair-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miroslav Král",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.7",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "lazy.js": "npm:lazy.js@^0.4.2",
+      "semantic-ui": "github:Semantic-Org/Semantic-UI@^2.1.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

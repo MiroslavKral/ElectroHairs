@@ -1,0 +1,53 @@
+<div class="ui divided two column padded equal height grid">
+  <div class="left four wide column">
+    <div class="ui big fluid icon input">
+      <input
+          ng-model="vm.filter"
+          type="text"
+          placeholder="Search...">
+      <i class="search icon"></i>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui very relaxed link list"
+         ng-repeat="customer in vm.customers | filter:vm.filter">
+
+      <a class="item">
+        <div class="left floated">
+          <i class="file text outline icon"></i>
+        </div>
+        <div class="description">{{customer.firstName}} {{customer.surname}}</div>
+      </a>
+
+      <div class="ui divider"></div>
+
+    </div>
+
+    <button class="ui right fluid large blue labeled icon button">
+      <i class="plus icon"></i>
+      <span>Add</span>
+    </button>
+  </div>
+  <div class="right twelve wide column">
+    <form class="ui large form">
+      <h4 class="ui dividing header">Novy zakaznik</h4>
+      <div class="field">
+        <label>Jmeno</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="first-name" placeholder="Krestni">
+          </div>
+          <div class="field">
+            <input type="text" name="surname" placeholder="Prijmeni">
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Telefon</label>
+        <input type="text" name="phone" placeholder="Telefon">
+      </div>
+      <button class="ui positive large button" tabindex="0">Pridat</button>
+    </form>
+  </div>
+</div>

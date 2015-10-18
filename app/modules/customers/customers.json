@@ -1,0 +1,14 @@
+{
+  "customers": [
+    {
+      "firstName": "Miroslav",
+      "surname": "Král",
+      "telephone": "+420775970033"
+    },
+    {
+      "firstName": "Petra",
+      "surname": "Pohlová",
+      "telephone": "+420609743091"
+    }
+  ]
+}

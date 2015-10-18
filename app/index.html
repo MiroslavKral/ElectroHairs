@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css">
+    <script src="assets/semantic/semantic.min.js"></script>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+      System.import('modules/bootstrap');
+    </script>
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui piled segment">
+        <h1>Semantic UI</h1>
+      </div>
+      <div ui-view=""></div>
+    </div>
+
+    <h1>We are using Electron</h1>
+    <script> document.write(process.versions['electron']) </script>
+    on
+    <script> document.write(process.platform) </script>
+    <script type="text/javascript">
+      var fs = require('fs');
+      var file = fs.readFileSync('app/package.json');
+      document.write(file);
+    </script>
+  </body>
+</html> 
